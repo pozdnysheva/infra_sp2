@@ -27,12 +27,14 @@ http://localhost/redoc/
 git clone https://github.com/pozdnysheva/infra_sp2.git
 ```
 2) В папке infra создайте файл .env, в котором пропишите следующие переменные окружения:
+```
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
+```
 
 3) С помощью Dockerfile и docker-compose.yaml разверните проект:
 ```
