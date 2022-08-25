@@ -54,6 +54,8 @@ python manage.py migrate
 python manage.py createsuperuser
 
 python manage.py loaddata fixtures.json
+
+python manage.py collectstatic
 ```
 
 ### Авторы:
