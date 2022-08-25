@@ -1,14 +1,11 @@
 # Проект YaMDb - сервис отзывов на произведения
 
-### Авторы:
-- [Позднышева Наталья](https://github.com/pozdnysheva "Github page")
-- [Цеков Давид](https://github.com/TsekovDavid "Github page")
-
 ### Технологии:
 - Python 3.7
 - Django 2.2
 - Django REST framework 3.12
 - библиотека Simple JWT - работа с JWT-токеном
+- база данных PostgreSQL
 
 ### 
 Сервис собирает отзывы на произведения различных категорий (например: книги, песни, фильмы). Произведению может быть присвоен жанр. Каждое произведение получает рейтинг на основе оценок пользователей (от 1 до 10).
@@ -33,7 +30,7 @@ git clone https://github.com/pozdnysheva/infra_sp2.git
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
 POSTGRES_USER=postgres
-POSTGRES_PASSWORD=passYatube28
+POSTGRES_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
 
@@ -56,3 +53,7 @@ python manage.py createsuperuser
 
 python manage.py loaddata fixtures.json
 ```
+
+### Авторы:
+- [Позднышева Наталья](https://github.com/pozdnysheva "Github page")
+- [Цеков Давид](https://github.com/TsekovDavid "Github page")
